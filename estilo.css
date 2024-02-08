@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    align-items: center;
+    background: #40414f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 100px; /* Largura desejada da imagem */
+    height: 150px; /* Altura desejada da imagem */
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de escala */
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.2); /* Efeito de zoom in ao passar o mouse sobre a imagem */
+  }
+  
+  .edit-text {
+    margin-top: 10px;
+    padding: 10px;
+    
+    border: 1px solid #ccc;
+    color: aliceblue;
+    min-width: 300px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  #editText {
+    position: fixed; /* Isso mantém o elemento fixo na tela, independentemente do rolar */
+    top: 20px; /* Distância do topo em pixels */
+    left: 20px; /* Distância da esquerda em pixels */
+    width: 330px; /* Largura do elemento em pixels */
+    height: 100px; /* Altura do elemento em pixels */
+    border: 1px solid #ccc; /* Borda para visualização */
+    padding: 10px; /* Espaçamento interno para melhor aparência */
+    background-color: #40414f; /* Cor de fundo */
+    z-index: 999; /* Define a camada z para garantir que esteja acima de outros elementos */
+  }
+
+  #deleteBtn{
+    position: fixed;
+    top: 950px; /* Distância do topo em pixels */
+    left: 1752px; /* Distância da esquerda em pixels */
+  }
+
+  
+  
